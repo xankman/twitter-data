@@ -14,13 +14,14 @@ df = pd.DataFrame(data, columns=columns)
 
 print(df)
 
-df = pd.DataFrame(data, columns=columns)
-
 #df.to_csv('tweets.csv')
 
-print(df)
-"""
+
 # TODO
+#
+# Create a third column for tweet reaction count?
+#
 # Create Read Update Delete MySQL database and connect to database.
 #    mysql_create.py - create database and table(s)
 #    mysql_update.py - write data to the table(s)
+#    tweek-db -> mysql db name(tweet kapture)
