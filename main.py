@@ -1,23 +1,14 @@
 import pandas as pd
-import tweepy
-import configparser
+from auth import connect_to_twitter_oauth
+"""
+musk_tweets = api.user_timeline('elonmusk')
 
-#read configs
-config = configparser.ConfigParser()
-config.read('config.ini')
+for tweet in musk_tweets:
+    print(tweet.text)
 
-api_key = config['TWITTER']['api_key']
-api_key_secret = config['TWITTER']['api_key_secret']
+"""
 
-access_token = config['TWITTER']['access_token']
-access_token_secret = config['TWITTER']['access_token_secret']
-
-#authentication to twitter api
-auth = tweepy.OAuthHandler(api_key, api_key_secret)
-auth.set_access_token(access_token, access_token_secret)
-
-api = tweepy.API(auth)
-
+api = connect_to_twitter_oauth()
 public_tweets = api.home_timeline()
 
 print(public_tweets[0].text)
@@ -33,8 +24,9 @@ df = pd.DataFrame(data, columns=columns)
 #df.to_csv('tweets.csv')
 
 print(df)
-
-#TODO
+"""
+# TODO
 # Create Read Update Delete MySQL database and connect to database.
 #    mysql_create.py - create database and table(s)
 #    mysql_update.py - write data to the table(s)
+"""
