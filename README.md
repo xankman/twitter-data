@@ -1,3 +1,3 @@
-This project uses the Twitter API to extract data from Twitter public tweets of an Twitter user.
+This project uses the Twitter API to extract data from Twitter public tweets of a Twitter user.
 
-It returns the tweet count for the week of identified user.
+It returns the tweet and screen name right now. More to come.
