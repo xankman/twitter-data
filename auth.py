@@ -12,9 +12,6 @@ api_key_secret = config['TWITTER']['api_key_secret']
 access_token = config['TWITTER']['access_token']
 access_token_secret = config['TWITTER']['access_token_secret']
 
-# bearer_access_token = config['TWITTER']['bearer_token']
-
-
 # auth to twitter
 def connect_to_twitter_oauth():
     auth = tweepy.OAuthHandler(api_key, api_key_secret)
