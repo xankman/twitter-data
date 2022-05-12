@@ -19,7 +19,7 @@ print(df)
 
 # TODO
 #
-# Create a third column for tweet reaction count?
+# Create a third column for tweet engagement count?
 #
 # Create Read Update Delete MySQL database and connect to database.
 #    mysql_create.py - create database and table(s)
