@@ -7,5 +7,13 @@ def connect_to_database():
 
 #mysql_pass = 'cryptomake'
 
+# mycursor = mysqldbms.cursor()
+# mycursor.execute("SHOW tables")
+#
+# for db in mycursor:
+#     print(db)
+#
+# print("\nNow exiting...")
+
 # TODO
 # install mysql-connector-python using pip through pycharm terminal
