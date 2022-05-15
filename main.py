@@ -29,7 +29,7 @@ print("Writing Data...")
 
 # Create the connection and close it (whether successfully connected or failed).
 with engine.begin() as connection:
-    df.to_sql(name='tweets_table', con=connection, if_exists='append', index=False)
+    df.to_sql(name='tweets_table', con=connection, if_exists='replace', index=False)
 
 print("Data written. Now closing connection...")
 
