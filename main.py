@@ -1,9 +1,9 @@
 import pandas as pd
 import pymysql
 from auth import connect_to_twitter_oauth
-pymysql.install_as_MySQLdb()
 from sqlalchemy import create_engine
 
+pymysql.install_as_MySQLdb()
 
 # Connect to Twitter API
 api = connect_to_twitter_oauth()
