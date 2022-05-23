@@ -6,7 +6,6 @@ Dependencies
 * python 3.10.4
 * mysql 8.0.29
 * tweepy
-* mysql.connector
 * pymysql
 * sqlalchemy
 * pandas
