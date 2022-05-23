@@ -7,7 +7,7 @@ Dependencies
 * mysql 8.0.29
 * tweepy
 * mysql connector
-* pymsql
+* pymysql
 * sqlalchemy
 * pandas
 * Twitter developer account for API keys
